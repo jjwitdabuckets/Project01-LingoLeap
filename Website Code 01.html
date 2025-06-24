@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>LingoLeap - Learn Languages Fast</title>
+  <style>
+    @font-face {
+      font-family: 'HeadingFont';
+      src: url('fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'BodyFont';
+      src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f3f4f6;
+      color: #1f2937;
+      scroll-behavior: smooth;
+      font-family: 'BodyFont', sans-serif;
+    }
+
+    header {
+      background: #3b82f6;
+      color: white;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-family: 'HeadingFont', serif;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #dbeafe;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 50px;
+      background: linear-gradient(to right, #3b82f6, #60a5fa);
+      color: white;
+    }
+
+    .hero-text {
+      max-width: 500px;
+      animation: fadeInLeft 1.5s ease;
+    }
+
+    .hero-text h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      font-family: 'HeadingFont', serif;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .hero-text button {
+      background: white;
+      color: #3b82f6;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero-text button:hover {
+      background: #dbeafe;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 60px 50px;
+    }
+
+    .feature {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .feature h3 {
+      margin-bottom: 10px;
+      font-size: 22px;
+      font-family: 'HeadingFont', serif;
+    }
+
+    .feature p {
+      color: #4b5563;
+    }
+
+    footer {
+      background: #1f2937;
+      color: #d1d5db;
+      text-align: center;
+      padding: 30px;
+    }
+
+    footer .credit {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #9ca3af;
+    }
+
+    .animated-svg {
+      width: 300px;
+      height: 250px;
+      margin-top: 30px;
+    }
+
+    @keyframes fadeInLeft {
+      from {
+        opacity: 0;
+        transform: translateX(-40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>LingoLeap</h1>
+    <nav>
+      <a href="#">Home</a>
+       <a href="courses.html">Courses</a>
+      <a href="signup.html">Get Started</a>
+      <a href="AboutUs.html">Contact</a>
+     <a href="word-match.html">Games</a>
+
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Learn a New Language in Weeks</h2>
+      <p>Master Spanish, French, Mandarin and more with interactive lessons and daily challenges designed to get you fluent fast.</p>
+      <button onclick="alert('Sign up page coming soon!')">Start Learning</button>
+      <img class="animated-svg" src="animated_language_image.png" alt="Language Greetings">
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>Daily Practice</h3>
+      <p>Build consistency with fun, bite-sized lessons you can complete on your schedule.</p>
+    </div>
+    <div class="feature">
+      <h3>Speech Recognition</h3>
+      <p>Practice your pronunciation with AI-powered tools and get real-time feedback.</p>
+    </div>
+    <div class="feature">
+      <h3>Gamified Progress</h3>
+      <p>Earn badges, track streaks, and challenge friends as you level up your language skills.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LingoLeap. All rights reserved. Connect with us globally.</p>
+    <p class="credit">Website designed by Aphiwe Ntshingila | Instagram: <a href="https://instagram.com/jjwitdabuckets" target="_blank" style="color: #60a5fa; text-decoration: none;">@jjwitdabuckets</a></p>
+  </footer>
