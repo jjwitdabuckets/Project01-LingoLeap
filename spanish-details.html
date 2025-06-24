@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spanish for Beginners - LingoLeap</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background: #f9fafb;
+      color: #1f2937;
+    }
+
+    header {
+      background: #ef4444;
+      color: white;
+      padding: 20px 40px;
+    }
+
+    main {
+      padding: 40px;
+    }
+
+    h1, h2 {
+      color: #111827;
+    }
+
+    .lesson {
+      background: white;
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .phrase {
+      margin: 10px 0;
+      padding: 12px;
+      background: #e0f2fe;
+      border-left: 4px solid #0284c7;
+      border-radius: 6px;
+    }
+
+    .quiz {
+      margin-top: 20px;
+    }
+
+    .quiz-question {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .quiz-options label {
+      display: block;
+      margin: 6px 0;
+    }
+
+    .scoreboard {
+      position: fixed;
+      top: 10px;
+      right: 20px;
+      background: #ffffff;
+      padding: 10px 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="scoreboard">Score: <span id="score">0</span></div>
+
+  <header>
+    <h1>Spanish for Beginners</h1>
+    <p>Welcome to your beginner journey in Spanish!</p>
+  </header>
+
+  <main>
+    <section class="lesson">
+      <h2>Lesson 1: Greetings</h2>
+      <div class="phrase">English: Hello<br>Spanish: Hola</div>
+      <div class="phrase">English: Good morning<br>Spanish: Buenos días</div>
+      <div class="phrase">English: Good evening<br>Spanish: Buenas noches</div>
+      <div class="phrase">English: How are you?<br>Spanish: ¿Cómo estás?</div>
+      <div class="quiz">
+        <div class="quiz-question">What does "Buenos días" mean?</div>
+        <div class="quiz-options">
+          <label><input type="radio" name="q1" value="0"> Good night</label>
+          <label><input type="radio" name="q1" value="1"> Good morning</label>
+          <label><input type="radio" name="q1" value="0"> Hello</label>
+        </div>
+      </div>
+    </section>
+
+    <section class="lesson">
+      <h2>Lesson 2: Essential Questions</h2>
+      <div class="phrase">English: Where is the bathroom?<br>Spanish: ¿Dónde está el baño?</div>
+      <div class="phrase">English: What time is it?<br>Spanish: ¿Qué hora es?</div>
+      <div class="phrase">English: Can you help me?<br>Spanish: ¿Puedes ayudarme?</div>
+      <div class="phrase">English: How much does it cost?<br>Spanish: ¿Cuánto cuesta?</div>
+      <div class="quiz">
+        <div class="quiz-question">How do you say "Where is the bathroom?" in Spanish?</div>
+        <div class="quiz-options">
+          <label><input type="radio" name="q2" value="1"> ¿Dónde está el baño?</label>
+          <label><input type="radio" name="q2" value="0"> ¿Cuánto cuesta?</label>
+          <label><input type="radio" name="q2" value="0"> ¿Qué hora es?</label>
+        </div>
+      </div>
+    </section>
+
+    <section class="lesson">
+      <h2>Lesson 3: Food & Drinks</h2>
+      <div class="phrase">English: I would like a coffee<br>Spanish: Me gustaría un café</div>
+      <div class="phrase">English: Water, please<br>Spanish: Agua, por favor</div>
+      <div class="phrase">English: I’m hungry<br>Spanish: Tengo hambre</div>
+      <div class="phrase">English: The food is delicious<br>Spanish: La comida está deliciosa</div>
+      <div class="quiz">
+        <div class="quiz-question">Translate: "I’m hungry"</div>
+        <div class="quiz-options">
+          <label><input type="radio" name="q3" value="0"> Estoy cansado</label>
+          <label><input type="radio" name="q3" value="1"> Tengo hambre</label>
+          <label><input type="radio" name="q3" value="0"> Me gustaría un café</label>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const scoreDisplay = document.getElementById("score");
+    let score = 0;
+    const allRadios = document.querySelectorAll('input[type="radio"]');
+
+    allRadios.forEach((radio) => {
+      radio.addEventListener('change', () => {
+        if (radio.value === "1" && !radio.checkedAlready) {
+          score += 1;
+          scoreDisplay.textContent = score;
+          radio.checkedAlready = true;
+        } else if (radio.value === "0" && !radio.checkedAlready) {
+          radio.checkedAlready = true;
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

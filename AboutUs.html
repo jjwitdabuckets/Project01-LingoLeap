@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - LingoLeap</title>
+  <style>
+    @font-face {
+      font-family: 'HeadingFont';
+      src: url('fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'BodyFont';
+      src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+    }
+
+    body {
+      font-family: 'BodyFont', sans-serif;
+      margin: 0;
+      background: #f0f9ff;
+      color: #1f2937;
+    }
+
+    header {
+      background: #0ea5e9;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-family: 'HeadingFont', serif;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      font-family: 'HeadingFont', serif;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #94a3b8;
+      border-radius: 8px;
+      font-family: 'BodyFont', sans-serif;
+    }
+
+    button {
+      background: #0ea5e9;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0284c7;
+    }
+
+    footer {
+      background-color: #1e293b;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>LingoLeap</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="signup.html">Get Started</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contact Us</h2>
+    <form onsubmit="alert('Message sent! We will respond shortly.'); return false;">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 LingoLeap. Designed by Aphiwe Ntshingila | Instagram: <a href="https://instagram.com/jjwitdabuckets" target="_blank" style="color: #38bdf8; text-decoration: none;">@jjwitdabuckets</a></p>
+  </footer>
+</body>
+
+</html>

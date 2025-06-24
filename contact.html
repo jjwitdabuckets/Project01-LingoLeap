@@ -1,0 +1,193 @@
+<!DOCTYPE
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses - LingoLeap</title>
+  <style>
+    @font-face {
+      font-family: 'HeadingFont';
+      src: url('fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'BodyFont';
+      src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+    }
+
+    body {
+      margin: 0;
+      font-family: 'BodyFont', sans-serif;
+      background: #f9fafb;
+      color: #1f2937;
+    }
+
+    header {
+      background-color: #3b82f6;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-family: 'HeadingFont', serif;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 40px;
+    }
+
+    h2 {
+      font-family: 'HeadingFont', serif;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .course-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .course-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s;
+    }
+
+    .course-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .course-card h3 {
+      font-family: 'HeadingFont', serif;
+      margin-bottom: 10px;
+    }
+
+    .course-card p {
+      font-size: 14px;
+      color: #4b5563;
+    }
+
+    .phrase-box {
+      margin-top: 15px;
+      padding: 10px;
+      background: #e0f2fe;
+      border-left: 4px solid #0284c7;
+      font-size: 14px;
+      border-radius: 6px;
+    }
+
+    footer {
+      background-color: #1f2937;
+      color: #d1d5db;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>LingoLeap</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="courses.html">Courses</a>
+      <a href="signup.html">Get Started</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Explore Our Language Courses</h2>
+    <div class="course-list">
+      <div class="course-card">
+        <h3>Spanish for Beginners</h3>
+        <p>Start with common phrases, pronunciation, and conversation basics.</p>
+        <div class="phrase-box">
+          English: Good morning <br>
+          Spanish: Buenos días
+        </div>
+        <div class="phrase-box">
+          English: Thank you <br>
+          Spanish: Gracias
+        </div>
+      </div>
+
+      <div class="course-card">
+        <h3>French Essentials</h3>
+        <p>Learn essential vocabulary and phrases for everyday use.</p>
+        <div class="phrase-box">
+          English: How are you? <br>
+          French: Comment ça va ?
+        </div>
+        <div class="phrase-box">
+          English: I don't understand <br>
+          French: Je ne comprends pas
+        </div>
+      </div>
+
+      <div class="course-card">
+        <h3>Mandarin Starter</h3>
+        <p>Master tones, simple characters, and practical dialogues.</p>
+        <div class="phrase-box">
+          English: Hello <br>
+          Mandarin: 你好 (Nǐ hǎo)
+        </div>
+        <div class="phrase-box">
+          English: Thank you <br>
+          Mandarin: 谢谢 (Xièxiè)
+        </div>
+      </div>
+
+      <div class="course-card">
+        <h3>Zulu Conversations</h3>
+        <p>Connect with culture through greetings, grammar, and local expressions.</p>
+        <div class="phrase-box">
+          English: Welcome <br>
+          Zulu: Siyakwamukela
+        </div>
+        <div class="phrase-box">
+          English: What is your name? <br>
+          Zulu: Ubani igama lakho?
+        </div>
+      </div>
+
+      <div class="course-card">
+        <h3>German Basics</h3>
+        <p>Cover grammar foundations, vocabulary and pronunciation.</p>
+        <div class="phrase-box">
+          English: Good night <br>
+          German: Gute Nacht
+        </div>
+        <div class="phrase-box">
+          English: See you later <br>
+          German: Bis später
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 LingoLeap. Designed by Aphiwe Ntshingila | Instagram: <a href="https://instagram.com/jjwitdabuckets" target="_blank" style="color: #60a5fa; text-decoration: none;">@jjwitdabuckets</a></p>
+  </footer>
+</body>
+
+</html>
