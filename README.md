@@ -23,11 +23,11 @@ This is just the beginning. I'm learning as I build, and I’m excited to keep i
 ## ✨ Features
 
 - 🎓 **Beginner-friendly lessons** in:
-  - Spanish 🇪🇸
-  - French 🇫🇷
-  - Mandarin 🇨🇳
-  - Zulu 🇿🇦
-  - German 🇩🇪
+  - Spanish
+  - French
+  - Mandarin
+  - IsiZulu
+  - German
 
 - ✅ **Interactive quizzes** with live scoring to test your progress
 - 🧠 10 full lessons (per language!) with everyday phrases
