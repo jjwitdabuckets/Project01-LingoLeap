@@ -42,7 +42,7 @@ This is just the beginning. I'm learning as I build, and I’m excited to keep i
 
 See the site in action and follow along as I test it out-check it out on my YouTube channel:
 
-👉 Watch on YouTube (https://www.youtube.com/channel/UCbVsCaUUpdRrylJqFvw37pw)
+👉 Watch on YouTube (https://youtu.be/u0Pp7DL7csY)
  
 *Designed to be clean, colorful, and intuitive — learning languages should feel fun!*
 
